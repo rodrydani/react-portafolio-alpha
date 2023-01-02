@@ -32,13 +32,13 @@ const handleClickTwo=()=>{
           <h3>Certificados:</h3>
           <br />
           <div className='certificate-div'>
-               <button onClick={handleClickOne} type="button" class="btn btn-outline-success"><i class="fa-solid fa-file"></i></button>
-               <button onClick={handleClickTwo} type="button" class="btn btn-outline-info"><i class="fa-solid fa-file"></i></button>
+               <button onClick={handleClickOne} type="button" class="btn btn-outline-success"><i class="fa-solid fa-graduation-cap"></i></button>
+               <button onClick={handleClickTwo} type="button" class="btn btn-outline-info"><i class="fa-solid fa-graduation-cap"></i></button>
           </div>
        
           <br />
           <div >
-          <button type="button"className='button-curriculum' >
+          <button type="button"class="btn btn-secondary" >
          <a href={curriculumMio} target="_blank" className='curri-button'>Descarga Mi curriculum</a>
         </button>
           </div>

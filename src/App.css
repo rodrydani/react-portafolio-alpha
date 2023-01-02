@@ -240,6 +240,9 @@ background-color: var(--background-color);
     filter: blur(3px);
    
 }
+.fa-graduation-cap{
+    font-size: 2rem;
+}
 .certificate-div{
     display: flex;
     justify-content: center;
@@ -315,11 +318,12 @@ background-color: var(--background-color);
    height: 300px;
    width: 90%;
     display: flex;
+    border-radius: 10px;
    gap: 2rem;
     justify-content: space-between;
   overflow-y: hidden;
     overflow-x:auto;
-  
+    margin: 0rem 1rem;
     background-color: var(--background-color);
     align-items: center;
     
@@ -358,7 +362,7 @@ background-color: var(--background-color);
    width: 90%;
     gap: 2rem;
     height: 300px;
-   
+    border-radius: 10px;
     align-items: center;
     margin: 0rem 1rem;
 }
