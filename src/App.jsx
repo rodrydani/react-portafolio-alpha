@@ -1,5 +1,6 @@
 
 import Home from "./components/Home"
+import { useEffect, useState } from "react";
 import './App.css'
 import NavBar from './components/NavBar';
 import Technologies from './components/Technologies';
@@ -9,10 +10,23 @@ import Proyects from './components/Proyects';
 import Footer from './components/Footer';
 
 function App() {
+  const [loading, setLoading]=useState(true);
 
-
+  useEffect(() => {
+  setTimeout(()=>{
+    setLoading(false);
+  },4000);
+  },[])
+  
   return (
-    
+    <>
+     {
+           loading ?
+           <div className="loader-cont">
+             <span class="loader"></span>
+           </div>
+          
+           :
     <div className="App">
        <NavBar/>
    <Home/>
@@ -35,6 +49,8 @@ function App() {
    </div>
   <Footer/>
     </div>
+    } 
+    </>
   )
 }
 
