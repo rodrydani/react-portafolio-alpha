@@ -9,7 +9,7 @@ const Footer = () => {
         <div > 
          <footer className='footer-page'>
          <div className='btn-linkedin-footer'>
-            <button  onClick={handleClick} type="button" class="btn btn-outline-light"><i class="fa-brands fa-linkedin"></i></button>
+            <button  onClick={handleClick} type="button" class="btn btn-info"><i class="fa-brands fa-linkedin"></i></button>
             </div>
          <p>Portfolio made by Rodrigo Miranda</p>
          <p>Year: 2022</p>

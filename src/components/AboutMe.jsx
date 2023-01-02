@@ -16,7 +16,8 @@ const handleClickTwo=()=>{
            <img className='imgAboutMe' src={imgAboutMe} alt="" />
            <h1>SOBRE MI</h1>
           <div className='text-description'>
-            <h3>Mi interes sobre la programacion:</h3>
+            <div  style={{padding:"2rem"}} >
+              <h3>Mi interes sobre la programacion:</h3>
             <br />
             <p>
                  Podria decir que siempre tuve un interes nato, en lo que a tecnologia se refiere. Sin embargo, no fue hasta hace poco tiempo que decidi enbarcarme en este mundo. Sin duda fue una de las mejores decisiones que tome en mi vida. 
@@ -24,13 +25,15 @@ const handleClickTwo=()=>{
               <br />
              <p>
               En Academlo encontre, mas que un oficio, una comunidad. Su gente es excelente y me hice de muy buenos compañeros.
-             </p>
+             </p>  
+            </div>
+          
           </div>
           <h3>Certificados:</h3>
           <br />
           <div className='certificate-div'>
                <button onClick={handleClickOne} type="button" class="btn btn-outline-success"><i class="fa-solid fa-file"></i></button>
-               <button onClick={handleClickTwo} type="button" class="btn btn-outline-light"><i class="fa-solid fa-file"></i></button>
+               <button onClick={handleClickTwo} type="button" class="btn btn-outline-info"><i class="fa-solid fa-file"></i></button>
           </div>
        
           <br />

@@ -14,13 +14,15 @@ const Home = () => {
     }
 
     return ( 
-    <section>
+    <section className='section-home'>
         <div>
         <h1 className='welcome-hi'>Hola! soy Rodrigo</h1>
             <div className='image-present' id='id-Home'>
           
-            <img  className='Img-Back' src={ImgBack} alt="" />
-            <img className='img-Me'  src={ImgMe} alt="" />
+            <div className='imgMe-Conteiner'>
+                 <img className='img-Me'  src={ImgMe} alt="" />
+            </div>
+           
             <div className='text-present'>
             <h3 className='present-tittle'>Bienvenido a mi pagina!</h3>
             <p className='present-tittle'>Mi nombre es Rodrigo Miranda. Soy oriundo de Argentina, Buenos Aires.</p>
@@ -35,9 +37,9 @@ const Home = () => {
         
         </div>
         <div className='btn-link-home'>
-            <button onClick={handleClick} type="button" class="btn btn-outline-info"><i class="fa-brands fa-linkedin"></i></button>
-            <button onClick={githandleClick} type="button" class="btn btn-outline-primary"><i class="fa-brands fa-github"></i></button>
-            <button type="button" class="btn btn-outline-danger"> <a href={curriculumMio} target="_blank"><i class="fa-solid fa-file-pdf"></i></a></button>
+            <button onClick={handleClick} type="button" class="btn btn-info"><i class="fa-brands fa-linkedin"></i></button>
+            <button onClick={githandleClick} type="button" class="btn btn-primary"><i class="fa-brands fa-github"></i></button>
+            <button type="button" class="btn btn-danger"> <a href={curriculumMio} target="_blank"><i class="fa-solid fa-file-pdf"></i></a></button>
            </div>
         </section>
     );
