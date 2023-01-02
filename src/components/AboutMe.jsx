@@ -34,9 +34,9 @@ const handleClickTwo=()=>{
           </div>
        
           <br />
-          <div className='button-curriculum'>
-          <button type="button" class="btn btn-outline-warning">
-         <a href={curriculumMio} target="_blank">Descarga Mi curriculum</a>
+          <div >
+          <button type="button"className='button-curriculum' >
+         <a href={curriculumMio} target="_blank" className='curri-button'>Descarga Mi curriculum</a>
         </button>
           </div>
         <div>

@@ -7,11 +7,12 @@ import phrasePage from "../assets/phrase-page.png";
 import ecommerce from "../assets/e-commerce.png"
 const Proyects = () => {
     return (
-      <>
-      <br />
+     
+     <div className='project-container'>
       <h1 className='project-tittle'>Proyectos</h1>
       <br />
             <section className='Proyects' id='id-Proyects'>
+              
                   <div className='proyect-card'>
                      <a href="https://coruscating-alfajores-f77dfe.netlify.app/#/" target="_blank">
                         <img className='react-Ecommerce' src={reactEcommerce} alt="" />
@@ -44,7 +45,8 @@ const Proyects = () => {
                     </a>
                   </div>
             </section>
-            </>
+            </div>
+           
     );
 };
 

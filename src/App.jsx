@@ -11,12 +11,33 @@ import Footer from './components/Footer';
 
 function App() {
   const [loading, setLoading]=useState(true);
+  const [render, setRender] = useState("white")
+  const themeDarkList = document.body.classList
 
   useEffect(() => {
+    const localeStorageTheme = localStorage.getItem("theme")
+    if (localeStorageTheme === 'dark') {
+      setRender(localeStorageTheme)
+      document.body.classList.add('theme__dark')
+  }
+
+
   setTimeout(()=>{
     setLoading(false);
   },4000);
-  },[])
+  },[render])
+
+  const btnSwitch = () => {
+    if (render === "dark") {
+        setRender("white")
+        localStorage.setItem('theme', "white")
+        document.body.classList.remove('theme__dark')
+    } else {
+        localStorage.setItem('theme', "dark")
+        setRender("dark")
+        document.body.classList.add('theme__dark')
+    }
+}
   
   return (
     <>
@@ -29,14 +50,15 @@ function App() {
            :
     <div className="App">
        <NavBar/>
+     
    <Home/>
-   <br />
+   
    <AboutMe/>
-   <br />
+   
    <Technologies></Technologies>
-   <br />
+   
    <Proyects/>
-   <br />
+  
    <Contact/>
    <div className='burbujas'>
     <div className='burbuja'></div>
@@ -47,8 +69,13 @@ function App() {
     <div className='burbuja'></div>
     <div className='burbuja'></div>
    </div>
+   <button type="button" className={`switch ${render === "dark" ? 'activeDark switchTheme-active'  :'switchTheme-active'}`} id='switch' onClick={btnSwitch}>
+   <span><i class="fa-solid fa-moon"></i></span>
+                    <span><i class="fa-solid fa-sun"></i></span>
+     </button>
   <Footer/>
     </div>
+    
     } 
     </>
   )

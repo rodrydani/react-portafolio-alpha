@@ -8,7 +8,7 @@ import reduxLogo from "../assets/redux.png"
 
 const Technologies = () => {
     return (
-        <div className='tech.container'>
+        <div className='tech-container'>
           <h1 className='tech-tittle'>TECNOLOGIAS APRENDIDAS:</h1>
            <section className='technologies' id='id-technologies'>
           
