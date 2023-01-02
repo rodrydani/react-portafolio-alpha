@@ -9,7 +9,7 @@ body{
 }
 .navBar-header{
     position: fixed;
-  width: 99%;
+  width:100%;
   z-index: 2000;
 }
 .image-present{
@@ -20,7 +20,7 @@ body{
     width: 100%;
     align-items: center;
     padding-top: 2rem;
-   height: 900px;
+   height: 800px;
    padding-top: 100px;
 }
 .img-Me{
@@ -41,7 +41,7 @@ body{
     position:relative;
     z-index: 15;
     width: 300px;
-    left: 15%;
+    left: 10%;
     height: 50%;
     bottom:111%;
 }
@@ -52,9 +52,10 @@ body{
    filter: blur(1px);
 }
 .welcome-hi{
-  position: relative;
+  position: relative; 
 top: 100px;
-left: 30%;
+
+text-align: center;
 }
 .text-present{
    
@@ -239,6 +240,7 @@ background-color: rgba(169, 169, 169, 0.342);
 .technologies{
     align-items: center;
    height: 300px;
+   width: 90%;
     display: flex;
    gap: 2rem;
     justify-content: space-between;
@@ -270,6 +272,7 @@ background-color: rgba(169, 169, 169, 0.342);
 .Proyects{
    display: flex;
    overflow-x:auto;
+   width: 90%;
     gap: 2rem;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.244);
