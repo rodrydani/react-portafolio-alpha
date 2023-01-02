@@ -1,0 +1,578 @@
+/**********HOME*************/
+body{
+    overflow-x: hidden;
+    
+}
+.app{
+    overflow-x: hidden;
+    width: 100%;
+}
+.navBar-header{
+    position: fixed;
+  width: 99%;
+  z-index: 2000;
+}
+.image-present{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding-top: 2rem;
+   height: 900px;
+   padding-top: 100px;
+}
+.img-Me{
+    position: relative;
+    z-index: 20;
+    width: 200px;
+    height: 320px;
+   bottom: 300px;
+  
+}
+.Img-Back{
+    position: relative;
+   z-index: 10;
+    width: 260px;
+    height:350px;
+}
+.Img-Decoration{
+    position:relative;
+    z-index: 15;
+    width: 300px;
+    left: 15%;
+    height: 50%;
+    bottom:111%;
+}
+.Img-Decoration-Two{
+    position: relative;
+   width: 100%; 
+   bottom: 600px;
+   filter: blur(1px);
+}
+.welcome-hi{
+  position: relative;
+top: 100px;
+left: 30%;
+}
+.text-present{
+   
+    position: relative;
+    font-size: 1rem;
+    bottom: 280px;
+    background-color: rgba(96, 99, 99, 0.375);
+    width:80%;
+    height: 70%;
+    align-items: center;
+}
+.fa-github{
+    font-size: 2rem;
+}
+.fa-file-pdf{
+    font-size: 2rem; 
+}
+.fa-file{
+    font-size: 2rem; 
+}
+.btn-link-home{
+
+  display: flex;
+ justify-content: center;
+ gap: 1rem;
+
+}
+/********FOOTER***********/
+.footer-page{
+    padding-left: 1rem;
+     width: 100%;
+     text-align: left;
+ }
+.btn-linkedin-footer{
+    padding-left: 38%;
+    padding-bottom: 1rem;
+}
+.fa-linkedin{
+    font-size: 2rem;
+}
+
+/**********************FIN-HOME***************/
+
+/*********************CONTACT*****************/
+
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 470px;
+    justify-content: space-evenly;
+}
+.contact-num{
+    display: flex;
+    flex-direction: column;
+border: 1px solid rgb(46, 212, 234);
+width: 300px;
+text-align: center;
+z-index: 1;
+background-color: rgba(169, 169, 169, 0.342);
+}
+.contact-mail{
+    border: 1px solid rgb(46, 212, 234);
+    width: 300px;
+    text-align: center; 
+    z-index: 1;
+    background-color: rgba(169, 169, 169, 0.342);
+}
+.fa-envelope{
+    font-size: 3rem;
+    color: white;
+}
+.fa-square-whatsapp{
+    color: white;
+    font-size: 3rem;
+}
+.BackImageContact{
+    position: fixed;
+    width: 300px;
+    filter: blur(1px);
+    z-index: 0;
+}
+/******************FIN-CONTACT**************/
+
+/****************Abaut-me**************/
+.Abaut-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.text-description{
+    margin: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   background-color: rgba(169, 169, 169, 0.228);
+}
+.button-curriculum{
+    display: flex;
+   flex-direction: column;
+   gap: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.imgAboutMe{
+    position: absolute;
+    width: 300px;
+    filter: blur(3px);
+   
+}
+.certificate-div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+/*********EFECTO-BURBUJA**********/
+
+.burbuja{
+ 
+    background-color: white;
+    opacity: .3;
+    position: absolute;
+   
+    border-radius: 50%;
+
+    animation: burbujas 3s linear infinite;
+}
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+}
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 25%;
+    animation-duration: 4s;
+}
+.burbuja:nth-child(3){
+    width: 80px;
+    height: 80px;
+    left: 45%;
+    animation-duration: 5s;
+}
+.burbuja:nth-child(4){
+    width: 100px;
+    height: 100px;
+    left: 65%;
+    animation-duration: 3s;
+}
+.burbuja:nth-child(5){
+    width: 100px;
+    height: 100px;
+    left: 85%;
+    animation-duration: 3s;
+    display: none;
+}
+.burbuja:nth-child(6){
+    width: 100px;
+    height: 100px;
+    left: 95%;
+    animation-duration: 2s;
+    display: none;
+}
+
+/***************Tecno****************/
+.img-logo{
+    width: 200px;
+    transition: 1s;
+}
+
+.img-logo:hover{
+    transform: translateX(-10px) translateY(-10px);
+}
+.tech-tittle{
+ font-size: 2rem;
+ padding-top: 2rem;
+}
+.technologies{
+    align-items: center;
+   height: 300px;
+    display: flex;
+   gap: 2rem;
+    justify-content: space-between;
+  overflow-y: hidden;
+    overflow-x:auto;
+    margin: 3rem 1rem;
+    background-color: rgba(0, 0, 0, 0.244);
+    align-items: center;
+}
+.tech.container{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/******************PROYECT*******************/
+.react-Ecommerce{
+    width:300px;
+    height: 200px;
+}
+.project-tittle{
+    text-align: center;
+}
+.pokeDex-page{
+    width:300px;
+    height: 200px;
+
+    box-shadow: 0px 0px 30px gray;
+}
+.Proyects{
+   display: flex;
+   overflow-x:auto;
+    gap: 2rem;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.244);
+    align-items: center;
+    margin: 3rem 1rem;
+}
+
+@keyframes burbujas {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}/************************MEDIA QUERY ***********************/
+
+@media (min-width:900px){ 
+    /*************HOME*************/
+ 
+    .image-present{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+       height: 900px;
+       padding-top: 100px;
+    }
+    .img-Me{
+        width: 300px;
+        height: 500px;
+     right: 270px;
+      bottom: 15%;
+    }
+    .Img-Back{
+      width:400px;
+       height:500px;
+       left: 50px;
+      bottom: 20%;
+    }
+    .img-meAndBack{
+       position: relative;
+       bottom: 100px;
+    }
+    .Img-Decoration{
+        position:absolute;
+        z-index: 15;
+        width: 400px;
+        left: 0%;
+        height: 50%;
+        bottom:60%;
+    }
+ 
+    .welcome-hi{
+        left: 450px;
+    }
+    .text-present{
+        position: relative;
+        font-size: 1rem;
+        bottom: 200px;
+        align-items: initial;
+        width: 400px;
+       height: 300px;
+       right: 200px;
+       
+    }
+    .btn-link-home{
+    
+      display: flex;
+     justify-content: center;
+     gap: 1rem;
+    position: relative;
+    bottom: 400px;
+    left: 150px;
+    }
+  
+    /**************ABAUTmE******************/
+    .Abaut-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -20rem;
+        font-size: 1.3rem;
+    }
+    .text-description{
+        margin: 1rem;
+       margin-top: 1rem;
+       margin-bottom: 2rem;
+       background-color: rgba(169, 169, 169, 0.399);
+       width: 800px;
+    }
+    .imgAboutMe{
+        position: absolute;
+        width: 400px;
+        filter: blur(3px);
+       z-index: 0;
+    }
+    /***************Tecnologias*****************/
+    .img-logo{
+        width: 200px;
+        transition: 1s;
+    }
+    .cont-logo{
+        width:350px;
+    }
+  
+    .tech-tittle{
+     font-size: 2rem;
+    margin-bottom: 2rem;
+    }
+    .technologies{
+        align-items: center;
+       height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       gap: 1rem;
+       
+      overflow-y:hidden;
+        overflow-x:hidden;
+        margin-top: 2rem;
+        margin: 0;  
+    }
+ /*************proyectos********************/
+ .react-Ecommerce{
+    width:300px;
+    height: 200px;
+}
+.project-tittle{
+    text-align: center;
+}
+
+.Proyects{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   overflow-x:hidden;
+    gap: 1rem;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.244);
+    align-items: center;
+    margin: 3rem 1rem;
+}
+.proyect-card{
+    transition: .5s;
+   align-items: center;
+    border: 2px solid red;
+    width: 300px;
+}
+.proyect-card:hover{
+    opacity: 0.5;
+}
+/************contact*****************/
+.contact-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:200px;
+    justify-content: space-evenly;
+   margin:5rem 0;
+   font-size: .5rem;
+}
+.contact-num{
+ font-size: 1.5rem;
+}
+.contact-mail{
+    font-size: 1.5rem; 
+}
+/********FOOTER***********/
+.footer-page{
+    padding-left: 1rem;
+     width: 100%;
+     text-align: left;
+     background-color: rgba(85, 85, 123, 0.293);
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+ }
+.btn-linkedin-footer{
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.fa-linkedin{
+    font-size: 2rem;
+}
+}
+
+@media (min-width:1000px){
+     /*************HOME*************/
+ 
+    .image-present{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+       height: 900px;
+       padding-top: 100px;
+    }
+    .img-Me{
+        width: 300px;
+        height: 500px;
+     right: 200px;
+      bottom: 15%;
+    }
+    .Img-Back{
+      width:400px;
+       height:500px;
+       left: 150px;
+      bottom: 20%;
+    }
+   
+    .Img-Decoration{
+        position:absolute;
+        z-index: 15;
+        width: 400px;
+        left: 0%;
+        height: 50%;
+        bottom:60%;
+    }
+ 
+    .welcome-hi{
+        left: 450px;
+    }
+    .text-present{
+        position: relative;
+        font-size: 1rem;
+        bottom: 200px;
+        align-items: initial;
+        width: 400px;
+       height: 300px;
+      right: 50px;
+       font-size: 1.5rem;
+    }
+  /********************tecno******************/
+  .Abaut-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20rem;
+    font-size: 1.3rem;
+}
+.text-description{
+    margin: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   background-color: rgba(169, 169, 169, 0.228);
+   width: 800px;
+}
+/***************Tecnologias*****************/
+.img-logo{
+    width: 200px;
+    transition: 1s;
+    align-items: center;
+}
+.cont-logo{
+    width:350px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tech-tittle{
+ font-size: 2rem;
+margin-bottom: 2rem;
+}
+.technologies{
+    align-items: center;
+   height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   gap: 1rem;
+   
+  overflow-y:hidden;
+    overflow-x:hidden;
+    margin-top: 2rem;
+    margin: 0;  
+}
+.proyect-card{
+    transition: .5s;
+   align-items: center;
+    border: 2px solid red;
+    width: 300px;
+    margin: 0 auto;
+}
+.burbuja:nth-child(5){
+    width: 100px;
+    height: 100px;
+    left: 85%;
+    animation-duration: 3s;
+    display: initial;
+}
+.burbuja:nth-child(6){
+    width: 100px;
+    height: 100px;
+    left: 95%;
+    animation-duration: 2s;
+    display: initial;
+}
+}
