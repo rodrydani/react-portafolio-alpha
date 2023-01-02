@@ -1,6 +1,6 @@
 import React from 'react';
 import ImgBack from "../assets/imagenbackcf.png"
-import ImgMe from "../assets/imagen-Perfil.png"
+import ImgMe from "../assets/imagen-perfil.png"
 import ImgDecoration from "../assets/decoration-001.png"
 import curriculumMio from "../assets/Curriculum-academlo.pdf"
 
