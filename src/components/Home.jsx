@@ -24,11 +24,13 @@ const Home = () => {
             </div>
            
             <div className='text-present'>
-            <h3 className='present-tittle'>Bienvenido a mi pagina!</h3>
+                <div  style={{padding:"2rem"}}>
+                 <h3 className='present-tittle'>Bienvenido a mi pagina!</h3>
             <p className='present-tittle'>Mi nombre es Rodrigo Miranda. Soy oriundo de Argentina, Buenos Aires.</p>
             <p className='present-tittle'>Tengo 30 años y alrededor de 1 año programando.</p>
             
-             <p className='present-tittle'><b>Estoy seguro se que hariamos un buen equipo!</b></p>
+             <p className='present-tittle'><b>Estoy seguro se que hariamos un buen equipo!</b></p>    
+                </div>
             </div>
             <img className='Img-Decoration' src={ImgDecoration} alt="" />
           

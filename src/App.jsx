@@ -50,7 +50,6 @@ function App() {
            :
     <div className="App">
        <NavBar/>
-     
    <Home/>
    
    <AboutMe/>
@@ -60,15 +59,30 @@ function App() {
    <Proyects/>
   
    <Contact/>
-   <div className='burbujas'>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
+   <div className="gear-animation">
+    <div className="gear-traslate">
+      <i  class="fa-solid fa-gear"></i>
+      </div>  
+      <div className="gear-traslate">
+      <i  class="fa-solid fa-gear"></i>
+      </div>  
+      <div className="gear-traslate">
+      <i  class="fa-solid fa-gear"></i>
+      </div>  
    </div>
+  
+     
+
+{/* <div className='burbujas'>
+    <div className='burbuja'></div>
+    <div className='burbuja'></div>
+    <div className='burbuja'></div>
+    <div className='burbuja'></div>
+    <div className='burbuja'></div>
+    <div className='burbuja'></div>
+    <div className='burbuja'></div>
+   </div> */}
+  
    <button type="button" className={`switch ${render === "dark" ? 'activeDark switchTheme-active'  :'switchTheme-active'}`} id='switch' onClick={btnSwitch}>
    <span><i class="fa-solid fa-moon"></i></span>
                     <span><i class="fa-solid fa-sun"></i></span>
