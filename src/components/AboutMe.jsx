@@ -38,7 +38,7 @@ const handleClickTwo=()=>{
        
           <br />
           <div >
-          <button type="button"class="btn btn-secondary" >
+          <button className='curri-button' >
          <a href={curriculumMio} target="_blank" className='curri-button'>Descarga Mi curriculum</a>
         </button>
           </div>
