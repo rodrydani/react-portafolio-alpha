@@ -14,6 +14,8 @@
 --btn-border: rgb(0, 200, 255);
 
 --back-img:  #00b0d3;
+
+--back-description: rgb(29, 50, 111);
 }
 
 body.theme__dark{
@@ -30,6 +32,8 @@ body.theme__dark{
 --btn-border: rgb(119, 0, 255);
 
 --back-img:  #28064f;
+
+--back-description: rgb(9, 55, 194);
 }
 
 
@@ -47,7 +51,7 @@ body{
 br{
     background-color: var(--body-color) ;
 }
-.app{
+.App{
     overflow-x: hidden;
     width: 100%;
     background-color: var(--body-color);
@@ -372,7 +376,12 @@ background-color: var(--background-color);
     align-items: center;
     margin: 0rem 1rem;
 }
-
+.Card-body{
+    background-color: var(--body-color);
+}
+.button-project{
+    background-color: var(--background-color);
+}
 @keyframes burbujas {
     0%{
         bottom: 0;
@@ -546,13 +555,31 @@ background-color: var(--background-color);
 .proyect-card{
     transition: .5s;
    align-items: center;
-    border: 2px solid red;
-    width: 300px;
+   
+    width: 500px;
     margin: 0 auto;
 }
 .proyect-card:hover{
     opacity: 0.5;
 }
+.proyect-description{
+    position: absolute;
+  text-align: center;
+  margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    color:var(--text-color);
+    background-color: var(--body-color);
+    
+}
+.project-toolTip{
+ 
+    font-size: 1rem;
+}
+.tooltip{
+    background-color: var(--btn-border);
+}
+
 /************contact*****************/
 .contact-page{
     display: flex;

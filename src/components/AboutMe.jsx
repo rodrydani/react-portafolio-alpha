@@ -1,5 +1,8 @@
 import React from 'react';
-import curriculumMio from "../assets/Curriculum-academlo.pdf"
+import { useEffect } from 'react';
+import curriculumMio from "../assets/Curriculum-academlo.pdf";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import imgAboutMe from "../assets/decortion-004.png"
 const AboutMe = () => {
@@ -9,14 +12,17 @@ const AboutMe = () => {
 const handleClickTwo=()=>{
   window.open('https://certificates.academlo.com/en/verify/22828910830147/', '_blank')
 }
+useEffect(() => {
+  AOS.init();
+}, []);
     return (
       
-      <section>
-      <div className='Abaut-me' id='id-AbautMe'>
-           <img className='imgAboutMe' src={imgAboutMe} alt="" />
+      <section >
+      <div className='Abaut-me' id='id-AbautMe' data-aos="fade-left" style={{transition:"1s"}}>
+           <img className='imgAboutMe' src={imgAboutMe} alt=""  data-aos="zoom-in" style={{transition:"1s"}}/>
            <h1>SOBRE MI</h1>
           <div className='text-description'>
-            <div  style={{padding:"2rem"}} >
+            <div  style={{padding:"1rem"}} >
               <h3>Mi interes sobre la programacion:</h3>
             <br />
             <p>
@@ -29,16 +35,16 @@ const handleClickTwo=()=>{
             </div>
           
           </div>
-          <h3>Certificados:</h3>
+          <h3 data-aos="zoom-in" style={{transition:"1s"}}>Certificados:</h3>
           <br />
-          <div className='certificate-div'>
+          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s"}}>
                <button onClick={handleClickOne} type="button" class="btn btn-outline-success"><i class="fa-solid fa-graduation-cap"></i></button>
                <button onClick={handleClickTwo} type="button" class="btn btn-outline-info"><i class="fa-solid fa-graduation-cap"></i></button>
           </div>
        
           <br />
           <div >
-          <button className='curri-button' >
+          <button className='curri-button'  data-aos="zoom-in" style={{transition:"1s"}}>
          <a href={curriculumMio} target="_blank" className='curri-button'>Descarga Mi curriculum</a>
         </button>
           </div>

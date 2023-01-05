@@ -17,6 +17,7 @@ const Home = () => {
     <section className='section-home'>
         <div>
         <h1 className='welcome-hi'>Hola! soy Rodrigo</h1>
+        <h3 className='welcome-hi'>Desarrollador web <i class="fa-solid fa-gears"></i></h3>
             <div className='image-present' id='id-Home'>
           
             <div className='imgMe-Conteiner'>

@@ -1,18 +1,25 @@
 import React from 'react';
+import { useEffect } from 'react';
 import HtmlLogo from "../assets/html.png";
 import CssLogo from "../assets/css.png";
 import JavaScriptLogo from "../assets/js.png";
 import ReactLogo from "../assets/reactjs.png";
 import BootstrapLogo from "../assets/bootstrap.png";
 import reduxLogo from "../assets/redux.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Technologies = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
-        <div className='tech-container'>
+        <div className='tech-container'  data-aos="fade-right" style={{transition:"1s"}}>
           <h1 className='tech-tittle'>TECNOLOGIAS APRENDIDAS:</h1>
            <section className='technologies' id='id-technologies'>
           
-              <div className='cont-logo'>
+              <div className='cont-logo'data-aos="zoom-in" style={{transition:"1s"}}>
                 <img className='img-logo'  src={HtmlLogo} alt="" />
                 <p>HTML: Lenguaje de etiquetas de hipertexto</p>
             </div>
@@ -21,25 +28,25 @@ const Technologies = () => {
                 Css: Hojas de Estilo en Cascada
              </p>
              </div>
-            <div className="cont-logo"><img className='img-logo'  src={JavaScriptLogo} alt="" />
+            <div className="cont-logo" data-aos="zoom-in" style={{transition:"1s"}}><img className='img-logo'  src={JavaScriptLogo} alt="" />
             <p>
                 JavaScript: Lenguaje de programacion
             </p>
             </div>
-            <div className='cont-logo'><img className='img-logo'  src={ReactLogo} alt="" />
+            <div className='cont-logo' data-aos="zoom-in" style={{transition:"1s"}}><img className='img-logo'  src={ReactLogo} alt="" />
             <p>
             React: biblioteca Javascript de código abierto
             </p>
             </div>
             <div>
-                <div className='cont-logo'><img className='img-logo' src={BootstrapLogo} alt="" />
+                <div className='cont-logo' data-aos="zoom-in" style={{transition:"1s"}}><img className='img-logo' src={BootstrapLogo} alt="" />
                 <p>
                     Bootstrap: Biblioteca multiplataforma
                 </p>
                 </div>
             </div>
             <div>
-                <div className='cont-logo'><img className='img-logo' src={reduxLogo} alt="" />
+                <div className='cont-logo' data-aos="zoom-in" style={{transition:"1s"}}><img className='img-logo' src={reduxLogo} alt="" />
                 <p>
                 Redux: librería JavaScript. para el manejo del estado de las aplicaciones
                     </p>
