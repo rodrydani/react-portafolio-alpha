@@ -132,18 +132,18 @@ z-index: 200;
 
 .fa-github{
     font-size: 2rem;
-    color: var(--text-color);
+    color: white;
 }
 .fa-file-pdf{
     font-size: 2rem; 
-    color: var(--text-color);
+    color: white;
 }
 .fa-file{
     font-size: 2rem; 
-    color: var(--text-color);
+    color: white;
 }
 .fa-linkedin{
-    color: var(--text-color);
+    color: white;
 }
 .btn-link-home{
  background-color: var(--body-color);
@@ -152,6 +152,7 @@ z-index: 200;
  gap: 1rem;
  padding-top: 4rem;
 }
+
 /********FOOTER***********/
 .footer-page{
     background-color: var(--body-color);
@@ -449,6 +450,18 @@ background-color: var(--background-color);
     bottom: 300px;
     left: 150px;
     }
+    .fa-github{
+        font-size: 3rem;
+      
+    }
+    .fa-file-pdf{
+        font-size: 3rem; 
+       
+    }
+    .fa-file{
+        font-size: 3rem; 
+       
+    }
   
     /**************ABAUTmE******************/
     .Abaut-me{
@@ -572,8 +585,8 @@ background-color: var(--background-color);
     padding-bottom: 0;
 }
 .fa-linkedin{
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 3rem;
+   
 }
 }
 

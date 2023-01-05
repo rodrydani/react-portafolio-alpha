@@ -39,7 +39,7 @@ const Home = () => {
         
         </div>
         <div className='btn-link-home'>
-            <button onClick={handleClick} type="button" class="btn btn-info"><i class="fa-brands fa-linkedin"></i></button>
+            <button onClick={handleClick} type="button" class="btn btn-info" ><i class="fa-brands fa-linkedin"></i></button>
             <button onClick={githandleClick} type="button" class="btn btn-primary"><i class="fa-brands fa-github"></i></button>
             <button type="button" class="btn btn-danger"> <a href={curriculumMio} target="_blank"><i class="fa-solid fa-file-pdf"></i></a></button>
            </div>
