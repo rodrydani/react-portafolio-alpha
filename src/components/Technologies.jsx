@@ -27,7 +27,7 @@ const Technologies = () => {
         <>
    <h1 className='tech-tittle'>TECNOLOGIAS APRENDIDAS:</h1>
  <Carousel >
-      <Carousel.Item className='carousel'>
+      <Carousel.Item className='carousel' data-interval="false">
       <div className='tech-container'  data-aos="fade-right" style={{transition:".5s"}}>
       <h1 className='tech-tittle tittle-front'>FRONTEND</h1>
            <section className='technologies' id='id-technologies'>
