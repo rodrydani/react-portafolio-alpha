@@ -323,7 +323,9 @@ background-color: var(--background-color);
 .tech-tittle{
  font-size: 2rem;
  padding-top: 2rem;
+ color: var(--text-color);
 }
+
 .technologies{
     align-items: center;
    height: 300px;
@@ -335,14 +337,15 @@ background-color: var(--background-color);
   overflow-y: hidden;
     overflow-x:auto;
     margin: 0rem 1rem;
-    background-color: var(--background-color);
+   
     align-items: center;
     
 }
 .tech-container{
-    background-color: var(--body-color);
+    background-color: var(--background-color);
     width: 100%;
    color: var(--text-color);
+   
 }
 
 /******************PROYECT*******************/
@@ -502,18 +505,23 @@ background-color: var(--background-color);
     }
     /***************Tecnologias*****************/
     .img-logo{
-        width: 200px;
+        width: 150px;
         transition: 1s;
+        margin-bottom: .5rem;
     }
     .cont-logo{
         width:350px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    flex-direction: column;
     }
   
     .tech-tittle{
      font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
+ 
     }
     .technologies{
         align-items: center;
@@ -531,6 +539,10 @@ background-color: var(--background-color);
     .tech.container{
         align-items: center;
      
+    }
+    .carousel{
+
+        padding: 0 auto;
     }
  /*************proyectos********************/
  .react-Ecommerce{
@@ -706,7 +718,7 @@ background-color: var(--background-color);
 }
 /***************Tecnologias*****************/
 .img-logo{
-    width: 200px;
+    width: 150px;
     transition: 1s;
     align-items: center;
 }

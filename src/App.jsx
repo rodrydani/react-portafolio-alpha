@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe';
 import Proyects from './components/Proyects';
 import Footer from './components/Footer';
 
+
 function App() {
   const [loading, setLoading]=useState(true);
   const [render, setRender] = useState("white")
