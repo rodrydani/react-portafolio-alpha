@@ -13,7 +13,7 @@ import Portfolio from "../assets/portfolio.png";
 import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const Proyects = () => {
 
@@ -23,7 +23,7 @@ const Proyects = () => {
     return (
      
      <div className='project-container' data-aos="fade-left" style={{transition:".5s"}}>
-      <h1 className='project-tittle'>Proyectos</h1>
+      <h1 className='project-tittle'><FormattedMessage id='id-pro' defaultMessage='pro' /></h1>
       <br />
        
        
@@ -35,13 +35,7 @@ const Proyects = () => {
                  
                    placement="right"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p  className="project-toolTip">E-commerce hecho con reactJs.
-                          Para los estilos se utilizo 
-                          Css y bootstrap.
-                          Se utilizo una API de productos
-                          y Se agrego un Login
-                        Se utilizo React Router, redux 
-                        y html.
+                       <p  className="project-toolTip"><FormattedMessage id='id-pro1' defaultMessage='pro' />
                          </p> 
                    </Tooltip>}
                >
@@ -67,11 +61,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="right"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p className="project-toolTip">App hecha con react Router
-                         y redux.
-                         Los pokemons se trajeron
-                         de una API con sus 
-                         caracteristicas
+                       <p className="project-toolTip"><FormattedMessage id='id-pro2' defaultMessage='pro' />
                         </p> 
                    </Tooltip>}
                >
@@ -96,10 +86,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="left"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p  className="project-toolTip">App hecha con reactJs.
-                       CRUD’s y métodos HTTP.
-                       Los login se guardan
-                       en una API.
+                       <p  className="project-toolTip"><FormattedMessage id='id-pro3' defaultMessage='pro' />
                         </p> 
 
                    </Tooltip>}
@@ -125,12 +112,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="right"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p className="project-toolTip">App hecha con reactJs.
-                        se consumio la API de
-                        rick and morty.
-                        se utilizaron Listas,
-                        keys, imputs controlados 
-                        y renderizado condicional
+                       <p className="project-toolTip"><FormattedMessage id='id-pro4' defaultMessage='pro' />
                         </p> 
                    </Tooltip>}
                >
@@ -155,8 +137,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="right"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p className="project-toolTip">App hecha con reactJs
-                       se utilizo jn .json de frases.
+                       <p className="project-toolTip"><FormattedMessage id='id-pro5' defaultMessage='pro' />
                        </p> 
                    </Tooltip>}
                >
@@ -180,9 +161,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="bottom"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p className="project-toolTip">App hecha con reactJs.
-                        Se consumio la API del clima.
-                        Los estilos se hicieron con css.
+                       <p className="project-toolTip"><FormattedMessage id='id-pro6' defaultMessage='pro' />
                         </p> 
                    </Tooltip>}
                >
@@ -206,8 +185,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="right"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p className="project-toolTip">App hecha con JS vanilla.
-                        Se utilizo HTML, CSS y JS.
+                       <p className="project-toolTip"><FormattedMessage id='id-pro7' defaultMessage='pro' />
                         </p> 
                    </Tooltip>}
                >
@@ -231,8 +209,7 @@ const Proyects = () => {
                <OverlayTrigger
                    placement="right"
                    overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
-                       <p className="project-toolTip">App hecha con JS vanilla.
-                        Se utilizo HTML, CSS y JS.</p> 
+                       <p className="project-toolTip"><FormattedMessage id='id-pro7' defaultMessage='pro' /></p> 
                    </Tooltip>}
                >
                    {({ ref, ...triggerHandler }) => (

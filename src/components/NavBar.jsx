@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const NavBar = () => {
     return (
@@ -15,11 +15,21 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='nav-link'  href='#id-Home' >Inicio</Nav.Link>
-            <Nav.Link className='nav-link'  href='#id-AbautMe' >Info</Nav.Link>
-            <Nav.Link className='nav-link'  href='#id-technologies'>Tecnologias</Nav.Link>
-            <Nav.Link className='nav-link'  href='#id-Proyects' >Proyectos</Nav.Link>
-            <Nav.Link className='nav-link'  href='#id-Contact' >Contacto</Nav.Link>
+            <Nav.Link className='nav-link'  href='#id-Home' >
+            <FormattedMessage id='id-navbar1' defaultMessage='home' />
+             </Nav.Link>
+            <Nav.Link className='nav-link'  href='#id-AbautMe' >
+            <FormattedMessage id='id-navbar3' defaultMessage='abaut' />
+            </Nav.Link>
+            <Nav.Link className='nav-link'  href='#id-technologies'>
+            <FormattedMessage id='id-navbar2' defaultMessage='tecnologies' />
+            </Nav.Link>
+            <Nav.Link className='nav-link'  href='#id-Proyects' >
+            <FormattedMessage id='id-navbar4' defaultMessage='projects' />
+            </Nav.Link>
+            <Nav.Link className='nav-link'  href='#id-Contact' >
+            <FormattedMessage id='id-navbar5' defaultMessage='contact' />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,10 +1,11 @@
 import React from 'react';
 import { useEffect } from 'react';
-import curriculumMio from "../assets/Curriculum-academlo.pdf";
+import curriculumMio from "../assets/Rodrigo-Miranda-curriculum.pdf";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 
 import imgAboutMe from "../assets/decortion-004.png"
@@ -29,33 +30,33 @@ useEffect(() => {
       <section >
       <div className='Abaut-me' id='id-AbautMe' data-aos="fade-left" style={{transition:"1s"}}>
            <img className='imgAboutMe' src={imgAboutMe} alt=""  data-aos="zoom-in" style={{transition:"1s"}}/>
-           <h1>SOBRE MI</h1>
+           <h1>  <FormattedMessage id='id-about' defaultMessage='about' /></h1>
           <div className='text-description'>
             <div  style={{padding:"1rem"}} >
-              <h3>Mi interes sobre la programacion:</h3>
+              <h3><FormattedMessage id='id-about2' defaultMessage='about' /></h3>
             <br />
             <p>
-                 Podria decir que siempre tuve un interes nato, en lo que a tecnologia se refiere. Sin embargo, no fue hasta hace poco tiempo que decidi enbarcarme en este mundo. Sin duda fue una de las mejores decisiones que tome en mi vida. 
+            <FormattedMessage id='id-about3' defaultMessage='about' /> 
             </p>
               <br />
              <p>
-              En Academlo encontre, mas que un oficio, una comunidad. Su gente es excelente y me hice de muy buenos compañeros.
+             <FormattedMessage id='id-about4' defaultMessage='about' />
              </p>  
             </div>
           
           </div>
-          <h3 data-aos="zoom-in" style={{transition:"1s"}}>Certificados de Módulo:</h3>
+          <h3 data-aos="zoom-in" style={{transition:"1s"}}> <FormattedMessage id='id-about16' defaultMessage='about' /> </h3>
           <br />
           <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s"}}>
            <OverlayTrigger
               placement="left"
               overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
                   <p  className="project-toolTip">
-                  Fundamentos de Desarrollo Web:
+                  <FormattedMessage id='id-about4' defaultMessage='about' /> 
                   <br />
-                  duración: 105 horas
+                  <FormattedMessage id='id-about5' defaultMessage='about' />
                   <br />
-                  nivel: principiante
+                  <FormattedMessage id='id-about6' defaultMessage='about' />
                     </p> 
               </Tooltip>}
               >
@@ -72,11 +73,11 @@ useEffect(() => {
                 placement="top"
                 overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
                     <p  className="project-toolTip">
-                    Desarrollo de Aplicaciones Web con React:
+                    <FormattedMessage id='id-about7' defaultMessage='about' />
                     <br />
-                    duración: 2 meses
+                    <FormattedMessage id='id-about8' defaultMessage='about' />
                     <br />
-                    nivel: profesional
+                    <FormattedMessage id='id-about9' defaultMessage='about' />
                       </p> 
                 </Tooltip>}
              >
@@ -93,9 +94,9 @@ useEffect(() => {
                   <p  className="project-toolTip">
                   Back-End Node:
                   <br />
-                  duración: 2 meses
+                  <FormattedMessage id='id-about10' defaultMessage='about' />
                   <br />
-                  nivel: profesional
+                  <FormattedMessage id='id-about11' defaultMessage='about' />
                     </p> 
               </Tooltip>}
              >
@@ -107,18 +108,18 @@ useEffect(() => {
                )}
              </OverlayTrigger>
           </div>
-          <h3 data-aos="zoom-in" style={{transition:"1s"}}>Certificados de carrera:</h3>
+          <h3 data-aos="zoom-in" style={{transition:"1s"}}> <FormattedMessage id='id-about17' defaultMessage='about' /> </h3>
           <br />
           <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s"}}>
             <OverlayTrigger
             placement="left"
             overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
                 <p  className="project-toolTip">
-                Programa Full Stack de Desarollo:
+                <FormattedMessage id='id-about12' defaultMessage='about' />
                 <br />
-                duración: 5 meses
+                <FormattedMessage id='id-about13' defaultMessage='about' />
                 <br />
-                nivel: profesional
+                <FormattedMessage id='id-about14' defaultMessage='about' />
                   </p> 
             </Tooltip>}
             >
@@ -133,7 +134,7 @@ useEffect(() => {
           <br />
           <div >
           <button className='curri-button'  data-aos="zoom-in" style={{transition:"1s"}}>
-         <a href={curriculumMio} target="_blank" className='curri-button'>Descarga Mi curriculum</a>
+         <a href={curriculumMio} target="_blank" className='curri-button'><FormattedMessage id='id-about15' defaultMessage='about' /></a>
         </button>
           </div>
           <br />

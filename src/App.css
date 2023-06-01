@@ -348,6 +348,7 @@ background-color: var(--background-color);
    
 }
 
+
 /******************PROYECT*******************/
 .react-Ecommerce{
     width:300px;
@@ -835,7 +836,7 @@ margin-bottom: 2rem;
 
   /***************boton-theme**************/
   .switch {
-    background: var(--btn-color);
+    background: rgb(35, 36, 35);
     border-radius: 50px;
     border: none;
     position: fixed;
@@ -873,11 +874,11 @@ margin-bottom: 2rem;
 }
 
 .fa-sun {
-    background: var(--btn-color);
+ 
     color: orange;
 }
 .fa-moon{
-    color: black;
+    color: white;
 }
 
 .switch.activeDark::after {
@@ -939,4 +940,61 @@ animation: rotation 4s infinite linear;
         left: 90%; 
         opacity: 0;
     }}
+
+    /************button-lenguage***************/
+
+    .btn-lenguage{
+        background-color: rgb(35, 36, 35);
+        border-radius: 50px;
+        border: none;
+        position: fixed;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+        top: 80%;
+        /* modificar ubicacion a medida crece*/
+      right: 15%;
+        /* modificar ubicacion a medida crece*/
+        border: 4px solid var(--btn-border);
+        transition: left 1s ease;
+        z-index: 1000;
+        width: 100px;
+        height: 50px;
+        transition: 1s;
+    }
+    .esImg{
+     width: 30px;
+     height: 20px;
+     border: none;
+    }
+    .usImg{
+        width: 30px;
+        height: 20px;
+        border: none;
+    }
+
+    .btn-es{
+        background-color: rgb(35, 36, 35);
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+      height: 90%;
+      transition: 1s;
+    }
+    .btn-es:active{
+        transform: translateX(1px) translateY(1px);
+    }
+    .btn-us{
+        background-color: rgb(35, 36, 35);
+        border: none;
+        border-radius: 50%;
+        align-items: center;
+        height: 90%;
+        transition: 1s;
+    }
+    .btn-us:active{
+        transform: translateX(1px) translateY(1px);
+    }
+
+
  

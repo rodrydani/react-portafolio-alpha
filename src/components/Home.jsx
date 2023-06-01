@@ -2,7 +2,8 @@ import React from 'react';
 import ImgBack from "../assets/imagenbackcf.png"
 import ImgMe from "../assets/imagen-perfil.png"
 import ImgDecoration from "../assets/decoration-001.png"
-import curriculumMio from "../assets/Curriculum-academlo.pdf"
+import curriculumMio from "../assets/Rodrigo-Miranda-curriculum.pdf"
+import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const Home = () => {
     const handleClick=()=>{
@@ -16,8 +17,12 @@ const Home = () => {
     return ( 
     <section className='section-home'>
         <div>
-        <h1 className='welcome-hi'>Hola! soy Rodrigo</h1>
-        <h3 className='welcome-hi'>Desarrollador web <i class="fa-solid fa-gears"></i></h3>
+        <h1 className='welcome-hi'>
+        <FormattedMessage id='id-home1' defaultMessage='home' />
+        </h1>
+        <h3 className='welcome-hi'>
+        <FormattedMessage id='id-home2' defaultMessage='home' />
+        <i class="fa-solid fa-gears"></i></h3>
             <div className='image-present' id='id-Home'>
           
             <div className='imgMe-Conteiner'>
@@ -26,11 +31,19 @@ const Home = () => {
            
             <div className='text-present'>
                 <div  style={{padding:"2rem"}}>
-                 <h3 className='present-tittle'>Bienvenido a mi pagina!</h3>
-            <p className='present-tittle'>Mi nombre es Rodrigo Miranda. Soy oriundo de Argentina, Buenos Aires.</p>
-            <p className='present-tittle'>Tengo 30 años y alrededor de 1 año programando.</p>
+                 <h3 className='present-tittle'>
+                 <FormattedMessage id='id-home3' defaultMessage='home' />
+                 </h3>
+            <p className='present-tittle'>
+            <FormattedMessage id='id-home4' defaultMessage='home' />
+            </p>
+            <p className='present-tittle'>
+            <FormattedMessage id='id-home5' defaultMessage='home' />
+            </p>
             
-             <p className='present-tittle'><b>Estoy seguro se que hariamos un buen equipo!</b></p>    
+             <p className='present-tittle'><b>
+             <FormattedMessage id='id-home6' defaultMessage='home' />
+                </b></p>    
                 </div>
             </div>
             <img className='Img-Decoration' src={ImgDecoration} alt="" />
