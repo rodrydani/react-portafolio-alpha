@@ -125,7 +125,7 @@ br{
 .navBar-header{
     position: fixed;
   width:100%;
-  z-index: 2000;
+  z-index: 4000;
 
 }
 .nav-link{
@@ -484,12 +484,12 @@ background-color: var(--background-color);
     background-color: var(--background-color);
    display: flex;
    overflow-x:auto;
-   width: 90%;
+   width: 100%;
     gap: 2rem;
     height: 300px;
     border-radius: 10px;
     align-items: center;
-    margin: 0rem 1rem;
+    margin: 0rem 0rem;
 }
 .Card-body{
     background-color: var(--body-color);
@@ -1123,7 +1123,7 @@ z-index: 0;
       transition: 1s;
     }
     .btn-es:active{
-        transform: translateX(1px) translateY(1px);
+        transform: translateX(2px) translateY(2px);
     }
     .btn-us{
         background-color: rgb(35, 36, 35);
@@ -1134,7 +1134,7 @@ z-index: 0;
         transition: 1s;
     }
     .btn-us:active{
-        transform: translateX(1px) translateY(1px);
+        transform: translateX(2px) translateY(2px);
     }
 
    
