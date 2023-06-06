@@ -6,7 +6,10 @@ import 'aos/dist/aos.css';
 
 const Footer = () => {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            offset: 50, 
+            easing: 'ease-in-out', 
+          });
       }, []);
     const handleClick=()=>{
         window.open('https://www.linkedin.com/in/rodrigo-miranda-699311163/', '_blank')

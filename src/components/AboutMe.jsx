@@ -23,13 +23,16 @@ const handleClickFour=()=>{
   window.open('https://certificates.academlo.com/en/verify/09026267073814', '_blank')
 }
 useEffect(() => {
-  AOS.init();
+  AOS.init({
+    offset: 50, 
+    easing: 'ease-in-out', 
+  });
 }, []);
     return (
       
       <section >
       <div className='Abaut-me' id='id-AbautMe' data-aos="fade-left" style={{transition:"1s"}}>
-           <img className='imgAboutMe' src={imgAboutMe} alt=""  data-aos="zoom-in" style={{transition:"1s"}}/>
+         
            <h1>  <FormattedMessage id='id-about' defaultMessage='about' /></h1>
           <div className='text-description'>
             <div  style={{padding:"1rem"}} >
@@ -39,15 +42,13 @@ useEffect(() => {
             <FormattedMessage id='id-about3' defaultMessage='about' /> 
             </p>
               <br />
-             <p>
-             <FormattedMessage id='id-about4' defaultMessage='about' />
-             </p>  
+            
             </div>
           
           </div>
           <h3 data-aos="zoom-in" style={{transition:"1s"}}> <FormattedMessage id='id-about16' defaultMessage='about' /> </h3>
           <br />
-          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s"}}>
+          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
            <OverlayTrigger
               placement="left"
               overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
@@ -63,7 +64,7 @@ useEffect(() => {
                {({ ref, ...triggerHandler }) =>(
                 <button
                 ref={ref}
-                onClick={handleClickOne} type="button" class="btn btn-outline-warning " {...triggerHandler} ><i 
+                onClick={handleClickOne} type="button" class="btn btn-outline-warning " style={{transition:"1s", zIndex:"1000"}} {...triggerHandler} ><i 
                
                 class="fa-solid fa-graduation-cap"></i></button>
 
@@ -84,7 +85,7 @@ useEffect(() => {
                  {({ ref, ...triggerHandler }) =>(
                 <button 
                 ref={ref}
-                onClick={handleClickTwo} type="button" class="btn btn-outline-info"><i class="fa-solid fa-graduation-cap" {...triggerHandler}></i></button>
+                onClick={handleClickTwo} type="button" style={{transition:"1s", zIndex:"1000"}}  class="btn btn-outline-info"><i class="fa-solid fa-graduation-cap" {...triggerHandler}></i></button>
 
                )}
              </OverlayTrigger>
@@ -103,14 +104,14 @@ useEffect(() => {
               {({ ref, ...triggerHandler }) =>(
                <button 
                ref={ref}
-               onClick={handleClickThre} type="button" class="btn btn-outline-success"><i class="fa-solid fa-graduation-cap" {...triggerHandler}></i></button>
+               onClick={handleClickThre} type="button" style={{transition:"1s", zIndex:"1000"}}  class="btn btn-outline-success"><i class="fa-solid fa-graduation-cap" {...triggerHandler}></i></button>
 
                )}
              </OverlayTrigger>
           </div>
           <h3 data-aos="zoom-in" style={{transition:"1s"}}> <FormattedMessage id='id-about17' defaultMessage='about' /> </h3>
           <br />
-          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s"}}>
+          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
             <OverlayTrigger
             placement="left"
             overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
@@ -126,14 +127,14 @@ useEffect(() => {
                 {({ ref, ...triggerHandler }) =>(
                 <button
                 ref={ref}
-                 onClick={handleClickFour} type="button" class="btn btn-outline-danger"><i class="fa-solid fa-graduation-cap" {...triggerHandler}></i></button>
+                 onClick={handleClickFour} type="button" style={{transition:"1s", zIndex:"1000"}}  class="btn btn-outline-danger"><i class="fa-solid fa-graduation-cap" {...triggerHandler}></i></button>
 
                )} 
             </OverlayTrigger>
           </div>
           <br />
           <div >
-          <button className='curri-button'  data-aos="zoom-in" style={{transition:"1s"}}>
+          <button className='curri-button'  data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
          <a href={curriculumMio} target="_blank" className='curri-button'><FormattedMessage id='id-about15' defaultMessage='about' /></a>
         </button>
           </div>

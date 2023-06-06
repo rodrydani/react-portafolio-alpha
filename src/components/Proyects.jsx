@@ -18,7 +18,10 @@ import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 const Proyects = () => {
 
    useEffect(() => {
-      AOS.init();
+      AOS.init({
+        offset: 50, 
+        easing: 'ease-in-out', 
+      });
     }, []);
     return (
      
@@ -41,7 +44,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                      <a href="https://coruscating-alfajores-f77dfe.netlify.app/#/" target="_blank"
-                     className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                     className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                      >
                            <button
                     className='button-project'
@@ -67,7 +70,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                          <a href="https://deft-zuccutto-b00fa6.netlify.app/" target="_blank"
-                         className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                         className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                          >
                        <button
                          className='button-project'
@@ -93,7 +96,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                      <a href="https://transcendent-crumble-ab19b3.netlify.app/" target="_blank"
-                     className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                     className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                      >
                        <button
                          className='button-project'
@@ -118,7 +121,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                        <a href="https://timely-licorice-a0b5b7.netlify.app/" target="_blank"
-                       className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                       className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                        >
                        <button
                          className='button-project'
@@ -143,7 +146,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                       <a href="https://strong-otter-455114.netlify.app/" target="_blank"
-                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                       >
                        <button
                          className='button-project'
@@ -167,7 +170,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                       <a href="https://kaleidoscopic-starship-99c2a1.netlify.app/" target="_blank"
-                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                       >
                        <button
                          className='button-project'
@@ -191,7 +194,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                       <a href="https://jade-sunshine-189d37.netlify.app/" target="_blank"
-                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                       >
                        <button
                          className='button-project'
@@ -214,7 +217,7 @@ const Proyects = () => {
                >
                    {({ ref, ...triggerHandler }) => (
                       <a href="https://stellar-bombolone-10bd92.netlify.app/" target="_blank"
-                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s"}}
+                      className='proyect-card' data-aos="zoom-in" style={{transition:".5s", zIndex:"100"}}
                       >
                        <button
                        className='button-project'

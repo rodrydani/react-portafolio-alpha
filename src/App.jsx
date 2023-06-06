@@ -1,6 +1,9 @@
 
 import Home from "./components/Home"
 import { useEffect, useState } from "react";
+import { useSelector } from 'react-redux';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './App.css'
 import NavBar from './components/NavBar';
 import Technologies from './components/Technologies';
@@ -13,10 +16,13 @@ import imgUs from "./assets/usa.png";
 import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl';
 import messageES from '../src/lang/es-ES.json';
 import messageUS from '../src/lang/en-US.json';
+import ParticlesBackground from "./components/ParticlesBackground";
+import LoadingScreen from './components/LoadingScreen';
 
 function App() {
+  const isLoading = useSelector((state) => state.isLoading);
   const [messages, setMessages] = useState(messageUS)
-  const [loading, setLoading]=useState(true);
+
   const [render, setRender] = useState("white")
   const [locale, setLocale] = useState('en-US')
   const themeDarkList = document.body.classList
@@ -41,7 +47,7 @@ function App() {
 }
 
   setTimeout(()=>{
-    setLoading(false);
+ 
   },4000);
   },[render])
 
@@ -71,20 +77,18 @@ const setLanguage = (lenguage) => {
   }
 }
   
-  return (
+
+  return ( <>
+    {isLoading && <LoadingScreen />} 
     <IntlProvider messages={messages} locale={locale}> 
     <>
-     {
-           loading ?
-           <div className="loader-cont">
-             <span class="loader"></span>
-           </div>
-          
-           :
-    <div className="App">
+           <div className="App">
+      <ParticlesBackground />
+      
        <NavBar/>
+       {isLoading && <LoadingScreen />} 
    <Home/>
-   
+  
    <AboutMe/>
    
    <Technologies></Technologies>
@@ -92,7 +96,7 @@ const setLanguage = (lenguage) => {
    <Proyects/>
   
    <Contact/>
-   <div className="gear-animation">
+   {/*<div className="gear-animation">
     <div className="gear-traslate">
       <i  class="fa-solid fa-gear"></i>
       </div>  
@@ -101,20 +105,12 @@ const setLanguage = (lenguage) => {
       </div>  
       <div className="gear-traslate">
       <i  class="fa-solid fa-gear"></i>
-      </div>  
-   </div>
+     </div>  
+   </div>*/}
   
      
 
-{/* <div className='burbujas'>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-    <div className='burbuja'></div>
-   </div> */}
+
   
    <button type="button" className={`switch ${render === "dark" ? 'activeDark switchTheme-active'  :'switchTheme-active'}`} id='switch' onClick={btnSwitch}>
    <span><i class="fa-solid fa-moon"></i></span>
@@ -131,11 +127,12 @@ const setLanguage = (lenguage) => {
      </div>
       {/*button lenguage */}
   <Footer/>
-    </div>
+  </div>
+ 
     
-    } 
+
     </>
-    </IntlProvider>
+    </IntlProvider></>
   )
  
 }

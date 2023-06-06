@@ -1,19 +1,19 @@
 
 :root{
 
---body-color: rgb(255, 255, 255);
+--body-color:rgb(193, 193, 250);
 --body-color2: rgb(85, 120, 128);
 
 --nav-color: rgb(29, 140, 181);
 
---text-color: rgb(36, 35, 35);
+--text-color: rgb(51, 50, 50);
 --text-color2: rgb(251, 251, 251);
 
 --background-color:  rgba(48, 160, 173, 0.375);
 --btn-color: rgb(31, 26, 33);
 --btn-border: rgb(0, 200, 255);
 
---back-img:  #00b0d3;
+--back-img:  #176879;
 
 --back-description: rgb(29, 50, 111);
 }
@@ -24,14 +24,14 @@ body.theme__dark{
 
 --nav-color: rgb(0, 0, 0);
 
---text-color: rgb(233, 233, 233);
+--text-color: rgb(255, 255, 255);
 --text-color2: rgb(0, 0, 0);
 
 --background-color:  rgba(0, 0, 0, 0.375);
 --btn-color: rgb(255, 255, 255);
 --btn-border: rgb(119, 0, 255);
 
---back-img:  #28064f;
+--back-img:  #1f043f;
 
 --back-description: rgb(9, 55, 194);
 }
@@ -40,6 +40,69 @@ body.theme__dark{
 /**********HOME*************/
 
 
+/*--------------------Loading-spinner---------------------*/
+.spinner-overlay{
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:4000
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid #FFF;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid #FF3D00;
+    width: 38px;
+    height: 38px;
+    animation: rotationBack 1.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 28px;
+    height: 28px;
+    border-color: #FFF;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
 
 
 body{
@@ -47,14 +110,17 @@ body{
     background-color: var(--body-color);
 }
 
-
 br{
     background-color: var(--body-color) ;
 }
 .App{
+    font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
     width: 100%;
     background-color: var(--body-color);
+}
+.particles-edit{
+    color:#a57cd4
 }
 .navBar-header{
     position: fixed;
@@ -70,7 +136,7 @@ br{
   
 }
 .image-present{
-    background-color: var(--body-color);
+    background-color: transparent;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -150,7 +216,7 @@ z-index: 200;
     color: white;
 }
 .btn-link-home{
- background-color: var(--body-color);
+
  display: flex;
  justify-content: center;
  gap: 1rem;
@@ -159,7 +225,7 @@ z-index: 200;
 
 /********FOOTER***********/
 .footer-page{
-    background-color: var(--body-color);
+    
     color: var(--text-color);
     padding-left: 1rem;
      width: 100%;
@@ -241,6 +307,7 @@ background-color: var(--background-color);
 .button-curriculum{
    color: var(--text-color);
    background-color: var(--body-color);
+   z-index: 1000;
 }
 .imgAboutMe{
     position: absolute;
@@ -260,6 +327,7 @@ background-color: var(--background-color);
 .curri-button{
     background-color: tra;
 }
+
 /*********EFECTO-BURBUJA**********/
 
 .burbuja{
@@ -313,10 +381,14 @@ background-color: var(--background-color);
 
 /***************Tecno****************/
 .img-logo{
-    width: 200px;
+    width: 100px;
     transition: 1s;
 }
-
+.cont-logo{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
 .img-logo:hover{
     transform: translateX(-10px) translateY(-10px);
 }
@@ -324,11 +396,12 @@ background-color: var(--background-color);
  font-size: 2rem;
  padding-top: 2rem;
  color: var(--text-color);
+ align-items: center;
 }
 
 .technologies{
     align-items: center;
-   height: 300px;
+   height:200px;
    width: 90%;
     display: flex;
     border-radius: 10px;
@@ -336,17 +409,53 @@ background-color: var(--background-color);
     justify-content: space-between;
   overflow-y: hidden;
     overflow-x:auto;
-    margin: 0rem 1rem;
-   
-    align-items: center;
-    
+    margin: 0rem 1rem; 
 }
 .tech-container{
     background-color: var(--background-color);
-    width: 100%;
+    width: 75%;
    color: var(--text-color);
-   
+   align-items: center;
+   margin-left: 12%;
 }
+.text-tech{
+    display: none;
+}
+ /******react-slick******/
+ .slick-dots{
+    color: var(--text-color)
+}
+    .slick-dots li button:before{
+       font-size: 20px;
+      color: var(--text-color)
+    }
+    .slider-prev{
+            border-radius: 50%;
+            font-size: 40px;
+            color: var(--text-color);
+            background-color: transparent;
+            border: none;
+      
+    }
+    .slider-next{
+       
+            border-radius: 50%;
+            font-size: 40px;
+            color: var(--text-color);
+            background-color: transparent;
+            border: none;
+    }
+    .slider-cont-left{
+      position: relative;
+      top: -155px;
+      z-index: 3000;
+    }
+    .slider-cont-right{
+        position: relative;
+        top: -155px;
+       left:80%;
+        z-index: 3000; 
+    }
 
 
 /******************PROYECT*******************/
@@ -363,6 +472,8 @@ background-color: var(--background-color);
 .project-container{
     background-color: var(--body-color);
     color: var(--text-color);
+    width: 80%;
+    margin-left: 10%;
 }
 .img-project{
     border: 2px solid var(--btn-border);
@@ -417,7 +528,7 @@ background-color: var(--background-color);
     }
     .img-Me{
         width: 230px;
-        height: 400px;
+        height: 350px;
       bottom: 15%;
     }
     .imgMe-Conteiner{
@@ -505,6 +616,9 @@ background-color: var(--background-color);
        z-index: 0;
     }
     /***************Tecnologias*****************/
+    .text-tech{
+        display: initial;
+    }
     .img-logo{
         width: 150px;
         transition: 1s;
@@ -545,6 +659,28 @@ background-color: var(--background-color);
 
         padding: 0 auto;
     }
+    .slider-prev{
+       
+        font-size: 80px;
+       
+  
+}
+.slider-next{
+   
+       
+        font-size: 80px;
+       
+}
+.slider-cont-left{
+ 
+  top:-400px;
+ left:4%;
+}
+.slider-cont-right{
+    left:85%;
+    top:-400px;
+   
+}
  /*************proyectos********************/
  .react-Ecommerce{
     width:300px;
@@ -652,7 +788,7 @@ background-color: var(--background-color);
     }
     
     .imgMe-Conteiner{
-        width: 450px;
+        width: 400px;
         bottom: 150px;
        left: 10%;
       }
@@ -900,22 +1036,27 @@ margin-bottom: 2rem;
     color: var(--btn-color);
 font-size: 6rem;
 animation: rotation 4s infinite linear;
-}
+z-index: 0;
 
+}
+.fa-gear:hover{
+    user-select: none; 
+}
 .gear-traslate{
     position: fixed;
     top: 100px;
     animation: animationGear 5s linear infinite;
+  
 }
 .gear-traslate:nth-child(1){
-  
+   
    top: 300px;
     animation-duration: 8s;  
 }
 .gear-traslate:nth-child(2){
      top: 500px;
      animation-duration: 7s;
-    
+   
  }
 @keyframes rotation {
     from {
@@ -996,5 +1137,5 @@ animation: rotation 4s infinite linear;
         transform: translateX(1px) translateY(1px);
     }
 
-
+   
  
