@@ -18,6 +18,7 @@ import messageES from '../src/lang/es-ES.json';
 import messageUS from '../src/lang/en-US.json';
 import ParticlesBackground from "./components/ParticlesBackground";
 import LoadingScreen from './components/LoadingScreen';
+import Formulario from "./components/form";
 
 function App() {
   const isLoading = useSelector((state) => state.isLoading);
@@ -96,6 +97,8 @@ const setLanguage = (lenguage) => {
    <Proyects/>
   
    <Contact/>
+
+  <Formulario/>
    {/*<div className="gear-animation">
     <div className="gear-traslate">
       <i  class="fa-solid fa-gear"></i>
@@ -107,11 +110,6 @@ const setLanguage = (lenguage) => {
       <i  class="fa-solid fa-gear"></i>
      </div>  
    </div>*/}
-  
-     
-
-
-  
    <button type="button" className={`switch ${render === "dark" ? 'activeDark switchTheme-active'  :'switchTheme-active'}`} id='switch' onClick={btnSwitch}>
    <span><i class="fa-solid fa-moon"></i></span>
                     <span><i class="fa-solid fa-sun"></i></span>
@@ -126,6 +124,7 @@ const setLanguage = (lenguage) => {
       </button>
      </div>
       {/*button lenguage */}
+      
   <Footer/>
   </div>
  

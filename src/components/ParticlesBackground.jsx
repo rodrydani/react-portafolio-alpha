@@ -11,7 +11,7 @@ loadFull(engine)
 
     return (
         <div>
-            <Particles className='particles-edit'
+            <Particles 
            // id="tsparticles"
             options={particlesConfig}
             init={particlesInit}

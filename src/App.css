@@ -39,7 +39,6 @@ body.theme__dark{
 
 /**********HOME*************/
 
-
 /*--------------------Loading-spinner---------------------*/
 .spinner-overlay{
     background: rgba(0, 0, 0, 0.3);
@@ -103,7 +102,43 @@ body.theme__dark{
     }
   }
       
-
+/********form*****/
+.field {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 300px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border: 2px solid var(--btn-border);
+    border-radius: 10px;
+    background-color: var(--background-color);
+  }
+  
+  .field label {
+    display: block;
+    font-size:20px;
+    color: #777;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 20px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+  }
+  
 
 body{
     overflow-x: hidden;
@@ -251,23 +286,44 @@ z-index: 200;
     align-items: center;
     height: 470px;
     justify-content: space-evenly;
+   
 }
 .contact-num{
     display: flex;
     flex-direction: column;
-border: 1px solid rgb(46, 212, 234);
-width: 300px;
+border:1px solid var(--btn-border);
+width: 400px;
 text-align: center;
 z-index: 1;
 background-color: var(--background-color);
+border-radius: 10px;
+box-shadow: -10px -2px 20px  rgb(34, 33, 33);
+transform: rotate3d(0, -1, 0, 20deg);
+transition: 0.5s;
+}
+.contact-num:hover{
+    transform: rotate3d(0, 0, 0, 40deg);
+    box-shadow: none;
+   ;
 }
 .contact-mail{
-    border: 1px solid rgb(46, 212, 234);
-    width: 300px;
+    font-size: 25px;
+    border: 1px solid var(--btn-border);;
+    width: 400px;
     text-align: center; 
     z-index: 1;
     background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: -10px -2px 20px  rgb(34, 33, 33);
+    transform: rotate3d(0, -1, 0, 20deg);
+    transition: 0.5s;
 }
+.contact-mail:hover{
+    transform: rotate3d(0, 0, 0, 40deg);
+    box-shadow: none;
+   ;
+}
+
 .fa-envelope{
     font-size: 3rem;
     color:var(--text-color);
@@ -328,56 +384,6 @@ background-color: var(--background-color);
     background-color: tra;
 }
 
-/*********EFECTO-BURBUJA**********/
-
-.burbuja{
- 
-    background-color: var(--body-color2);
-    opacity: .3;
-    position: absolute;
-   
-    border-radius: 50%;
-
-    animation: burbujas 3s linear infinite;
-}
-.burbuja:nth-child(1){
-    width: 80px;
-    height: 80px;
-    left: 5%;
-    animation-duration: 3s;
-}
-.burbuja:nth-child(2){
-    width: 100px;
-    height: 100px;
-    left: 25%;
-    animation-duration: 4s;
-}
-.burbuja:nth-child(3){
-    width: 80px;
-    height: 80px;
-    left: 45%;
-    animation-duration: 5s;
-}
-.burbuja:nth-child(4){
-    width: 100px;
-    height: 100px;
-    left: 65%;
-    animation-duration: 3s;
-}
-.burbuja:nth-child(5){
-    width: 100px;
-    height: 100px;
-    left: 85%;
-    animation-duration: 3s;
-    display: none;
-}
-.burbuja:nth-child(6){
-    width: 100px;
-    height: 100px;
-    left: 95%;
-    animation-duration: 2s;
-    display: none;
-}
 
 /***************Tecno****************/
 .img-logo{
@@ -512,6 +518,22 @@ background-color: var(--background-color);
 }/************************MEDIA QUERY ***********************/
 
 @media (min-width:900px){ 
+    .field { 
+        width: 600px; 
+      }
+        
+  .field label {
+    font-size:30px;
+  }
+  
+  .field input { 
+    font-size: 30px;
+  }
+  
+  input[type="submit"] {
+    font-size: 30px; 
+  }
+      
     /*************HOME*************/
    .ti
     .image-present{
@@ -884,20 +906,7 @@ margin-bottom: 2rem;
     width: 300px;
     margin: 0 auto;
 }
-.burbuja:nth-child(5){
-    width: 100px;
-    height: 100px;
-    left: 85%;
-    animation-duration: 3s;
-    display: initial;
-}
-.burbuja:nth-child(6){
-    width: 100px;
-    height: 100px;
-    left: 95%;
-    animation-duration: 2s;
-    display: initial;
-}
+
 /********projects*******/
 .Proyects{
   width: 100%;

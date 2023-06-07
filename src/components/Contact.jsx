@@ -6,7 +6,9 @@ import 'aos/dist/aos.css';
 
 const Contact = () => {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            
+        });
       }, []);
     return ( 
          <section data-aos="fade-button" style={{transition:"1.5s"}}>
@@ -15,9 +17,6 @@ const Contact = () => {
              
             <h3 className='contact-num'><i class="fa-brands fa-square-whatsapp"></i>{" "}+54-1123134900</h3>
             <h3 className='contact-mail'><i class="fa-sharp fa-solid fa-envelope"></i>{" "}rodrydanielmir@gmail.com</h3>  
-           
-            
-           
         </div>
         
          </section>

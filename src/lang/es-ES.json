@@ -52,5 +52,12 @@
   "id-pro4":"App hecha con reactJs. se consumio la API de rick and morty. se utilizaron Listas, keys, imputs controlados y renderizado condicional",
   "id-pro5":"App hecha con reactJs se utilizo jn .json de frases.",
   "id-pro6":"App hecha con reactJs. Se consumio la API del clima. Los estilos se hicieron con css.",
-  "id-pro7":"App hecha con JS vanilla. Se utilizo HTML, CSS y JS."
+  "id-pro7":"App hecha con JS vanilla. Se utilizo HTML, CSS y JS.",
+
+  "id-form":"exito",
+  "id-form2":"la operación se completó con éxito",
+  "id-form3":"Nombre",
+  "id-form4":"Email",
+  "id-form5":"Mensaje",
+   "id-form6":"enviar"
 }

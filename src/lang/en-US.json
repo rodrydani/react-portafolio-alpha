@@ -53,6 +53,12 @@
   "id-pro4":"App made with reactJs. The rick and morty API was consumed. Lists, keys, controlled inputs and conditional rendering were used",
   "id-pro5":"App made with reactJs jn .json of phrases was used.",
   "id-pro6":"App made with reactJs. Weather API was consumed. The styles were made with css.",
-  "id-pro7":"App made with vanilla JS. HTML, CSS and JS were used."
-   
+  "id-pro7":"App made with vanilla JS. HTML, CSS and JS were used.",
+
+  "id-form":"Success",
+  "id-form2":"the operation was completed successfully",
+  "id-form3":"Name",
+  "id-form4":"Email",
+  "id-form5":"Message",
+   "id-form6":"send"
  }
