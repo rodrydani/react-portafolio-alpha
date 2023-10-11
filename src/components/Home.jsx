@@ -1,11 +1,11 @@
 import React from 'react';
 import ImgBack from "../assets/imagenbackcf.png"
-import ImgMe from "../assets/imagen-perfil.png"
+//import ImgMe from "../assets/Avatar.png"
 import ImgDecoration from "../assets/decoration-001.png"
-import curriculumMio from "../assets/Rodrigo-Miranda-curriculum.pdf"
+import curriculumMio from "../assets/Rodrigo-Miranda-Curriculum-ES.pdf"
 import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
-const Home = () => {
+const Home = ({Image}) => {
     const handleClick=()=>{
         window.open('https://www.linkedin.com/in/rodrigo-miranda-699311163/', '_blank')
     }
@@ -13,7 +13,7 @@ const Home = () => {
     const githandleClick =()=>{
         window.open('https://github.com/rodrydani/', '_blank')
     }
-
+   
     return ( 
     <section className='section-home'>
         <div>
@@ -24,11 +24,10 @@ const Home = () => {
         <FormattedMessage id='id-home2' defaultMessage='home' />
         <i class="fa-solid fa-gears"></i></h3>
             <div className='image-present' id='id-Home'>
-          
-            <div className='imgMe-Conteiner'>
-                 <img className='img-Me'  src={ImgMe} alt="" />
+         <div className='imgMe-Conteiner'>
+                 <img className='img-Me'  src={Image} alt="" />
             </div>
-           
+          
             <div className='text-present'>
                 <div  style={{padding:"2rem"}}>
                  <h3 className='present-tittle'>
@@ -45,8 +44,8 @@ const Home = () => {
              <FormattedMessage id='id-home6' defaultMessage='home' />
                 </b></p>    
                 </div>
-            </div>
-            <img className='Img-Decoration' src={ImgDecoration} alt="" />
+        </div>
+              {/*  <img className='Img-Decoration' src={ImgDecoration} alt="" />*/} 
           
             </div>
             

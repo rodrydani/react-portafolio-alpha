@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import curriculumMio from "../assets/Rodrigo-Miranda-curriculum.pdf";
+import curriculumMio from "../assets/Rodrigo-Miranda-Curriculum-ES.pdf";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -46,9 +46,9 @@ useEffect(() => {
             </div>
           
           </div>
-          <h3 data-aos="zoom-in" style={{transition:"1s"}}> <FormattedMessage id='id-about16' defaultMessage='about' /> </h3>
+          <h3 data-aos="zoom-in" style={{transition:"0.1s"}}> <FormattedMessage id='id-about16' defaultMessage='about' /> </h3>
           <br />
-          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
+          <div className='certificate-div' data-aos="zoom-in" style={{transition:"0.1s", zIndex:"1000"}}>
            <OverlayTrigger
               placement="left"
               overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
@@ -64,7 +64,7 @@ useEffect(() => {
                {({ ref, ...triggerHandler }) =>(
                 <button
                 ref={ref}
-                onClick={handleClickOne} type="button" class="btn btn-outline-warning " style={{transition:"1s", zIndex:"1000"}} {...triggerHandler} ><i 
+                onClick={handleClickOne} type="button" class="btn btn-outline-warning " style={{transition:"0.1s", zIndex:"1000"}} {...triggerHandler} ><i 
                
                 class="fa-solid fa-graduation-cap"></i></button>
 
@@ -109,7 +109,7 @@ useEffect(() => {
                )}
              </OverlayTrigger>
           </div>
-          <h3 data-aos="zoom-in" style={{transition:"1s"}}> <FormattedMessage id='id-about17' defaultMessage='about' /> </h3>
+          <h3 data-aos="zoom-in" style={{transition:"0.1s"}}> <FormattedMessage id='id-about17' defaultMessage='about' /> </h3>
           <br />
           <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
             <OverlayTrigger

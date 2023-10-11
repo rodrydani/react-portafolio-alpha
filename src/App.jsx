@@ -19,13 +19,15 @@ import messageUS from '../src/lang/en-US.json';
 import ParticlesBackground from "./components/ParticlesBackground";
 import LoadingScreen from './components/LoadingScreen';
 import Formulario from "./components/form";
-
+import ImgMeLight from "./assets/Avatar.png";
+import ImgMeDark from "./assets/Avatar-night.png"
 function App() {
   const isLoading = useSelector((state) => state.isLoading);
   const [messages, setMessages] = useState(messageUS)
 
   const [render, setRender] = useState("white")
   const [locale, setLocale] = useState('en-US')
+  const [image, setImage] = useState(ImgMeLight)
   const themeDarkList = document.body.classList
 
   useEffect(() => {
@@ -35,7 +37,10 @@ function App() {
 
     if (localeStorageTheme === 'dark') {
       setRender(localeStorageTheme)
-      document.body.classList.add('theme__dark')
+      document.body.classList.add('theme__dark');
+      setImage(ImgMeDark)
+  } else if (localeStorageTheme === 'white'){
+    setImage(ImgMeLight)
   }
 
   if (localeStorageLang === "es-ES") {
@@ -80,15 +85,17 @@ const setLanguage = (lenguage) => {
   
 
   return ( <>
-    {isLoading && <LoadingScreen />} 
+   
     <IntlProvider messages={messages} locale={locale}> 
     <>
            <div className="App">
       <ParticlesBackground />
       
        <NavBar/>
-       {isLoading && <LoadingScreen />} 
-   <Home/>
+     { /* <div>
+    <img src={image} alt="" />
+  </div>*/}
+   <Home Image={image}/>
   
    <AboutMe/>
    
@@ -110,6 +117,7 @@ const setLanguage = (lenguage) => {
       <i  class="fa-solid fa-gear"></i>
      </div>  
    </div>*/}
+   
    <button type="button" className={`switch ${render === "dark" ? 'activeDark switchTheme-active'  :'switchTheme-active'}`} id='switch' onClick={btnSwitch}>
    <span><i class="fa-solid fa-moon"></i></span>
                     <span><i class="fa-solid fa-sun"></i></span>
