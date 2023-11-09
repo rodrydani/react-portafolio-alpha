@@ -19,8 +19,8 @@ const Proyects = () => {
 
    useEffect(() => {
       AOS.init({
-        offset: 50, 
-        easing: 'ease-in-out', 
+        offset: 10, 
+        easing: 'Ease-in-out-back', 
       });
     }, []);
     return (

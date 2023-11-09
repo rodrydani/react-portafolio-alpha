@@ -1,6 +1,7 @@
 
 :root{
 
+ font-family: 'Prompt', sans-serif;
 --body-color:rgb(193, 193, 250);
 --body-color2: rgb(85, 120, 128);
 
@@ -8,7 +9,7 @@
 
 --text-color: rgb(51, 50, 50);
 --text-color2: rgb(251, 251, 251);
-
+--text-color3: rgb(123, 5, 179);
 --background-color:  rgba(48, 160, 173, 0.375);
 --btn-color: rgb(31, 26, 33);
 --btn-border: rgb(0, 200, 255);
@@ -16,6 +17,7 @@
 --back-img:  #176879;
 
 --back-description: rgb(29, 50, 111);
+
 }
 
 body.theme__dark{
@@ -26,7 +28,7 @@ body.theme__dark{
 
 --text-color: rgb(255, 255, 255);
 --text-color2: rgb(0, 0, 0);
-
+--text-color3: rgb(25, 228, 235);
 --background-color:  rgba(0, 0, 0, 0.375);
 --btn-color: rgb(255, 255, 255);
 --btn-border: rgb(119, 0, 255);
@@ -104,6 +106,7 @@ body.theme__dark{
       
 /********form*****/
 .field {
+    font-family: 'Prompt', sans-serif;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -143,6 +146,7 @@ body.theme__dark{
 body{
     overflow-x: hidden;
     background-color: var(--body-color);
+     font-family: 'Prompt', sans-serif;
 }
 
 br{
@@ -168,7 +172,7 @@ br{
 }
 .navBar{
     background-color: var(--nav-color);
-  
+    font-family: 'Prompt', sans-serif;
 }
 .image-present{
     background-color: transparent;
@@ -219,9 +223,11 @@ top: 100px;
 color: var(--text-color);
 text-align: center;
 z-index: 200;
+font-family: 'Prompt', sans-serif;
 }
 .present-tittle{
     color: var(--text-color); 
+    font-family: 'Prompt', sans-serif;
 }
 .text-present{
     color: var(--text-color);
@@ -234,7 +240,9 @@ z-index: 200;
     height: 70%;
     align-items: center;
 }
-
+.home5-0{
+    color: var(--text-color3);
+}
 .fa-github{
     font-size: 2rem;
     color: white;
@@ -249,6 +257,10 @@ z-index: 200;
 }
 .fa-linkedin{
     color: white;
+}
+
+.img-cv{
+    width: 3rem;
 }
 .btn-link-home{
 
@@ -279,6 +291,7 @@ z-index: 200;
 /*********************CONTACT*****************/
 
 .contact-page{
+    font-family: 'Prompt', sans-serif;
     background-color: var(--body-color);
     color: var(--text-color);
     display: flex;
@@ -342,6 +355,7 @@ transition: 0.5s;
 
 /****************Abaut-me**************/
 .Abaut-me{
+    font-family: 'Prompt', sans-serif;
     background-color: var(--body-color);
     color: var(--text-color);
     display: flex;
@@ -349,6 +363,10 @@ transition: 0.5s;
     align-items: center;
     justify-content: space-between;
     padding-top: 4rem;
+}
+.elements-container-abaut{
+    text-align: center;
+  
 }
 .text-description{
     background-color: var(--background-color);
@@ -378,10 +396,12 @@ transition: 0.5s;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
+    
 }
+
 .curri-button{
-    background-color: tra;
+  z-index: 1000;
 }
 
 
@@ -399,6 +419,7 @@ transition: 0.5s;
     transform: translateX(-10px) translateY(-10px);
 }
 .tech-tittle{
+    font-family: 'Prompt', sans-serif;
  font-size: 2rem;
  padding-top: 2rem;
  color: var(--text-color);
@@ -406,6 +427,7 @@ transition: 0.5s;
 }
 
 .technologies{
+    font-family: 'Prompt', sans-serif;
     align-items: center;
    height:200px;
    width: 90%;
@@ -476,6 +498,7 @@ transition: 0.5s;
 }
 
 .project-container{
+    font-family: 'Prompt', sans-serif;
     background-color: var(--body-color);
     color: var(--text-color);
     width: 80%;
@@ -543,7 +566,7 @@ transition: 0.5s;
         width: 100%;
         align-items: center;
      
-      
+      padding-top:0px;
     }
     .section-home{
         background-color: var(--body-color);
@@ -608,6 +631,7 @@ transition: 0.5s;
         font-size: 3rem; 
        
     }
+   
   
     /**************ABAUTmE******************/
     .Abaut-me{
@@ -849,31 +873,38 @@ transition: 0.5s;
         filter: blur(1px);
        
     }
-    .text-description{
-        background-color: var(--background-color);
-        color: var(--text-color);
-        margin: 1rem;
-       margin-top: 1rem;
-       margin-bottom: 2rem;
-       text-align: center;
-       align-items: center;
-      z-index: 100;
-    }
+ 
   /********************tecno******************/
   .Abaut-me{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: -100px;
+    margin-top: -150px;
     font-size: 1.3rem;
+}
+.elements-container-abaut{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: auto;
 }
 .text-description{
     margin: 1rem;
    margin-top: 1rem;
    margin-bottom: 2rem;
   border-radius: 10px;
-   width: 800px;
+   width: 600px;
+   position: relative;
+   right: 4rem;
+}
+
+.certificates-div{
+    margin-top: 1rem;
+}
+
+.curri-button{
+   margin-left: 2rem;
 }
 /***************Tecnologias*****************/
 .img-logo{

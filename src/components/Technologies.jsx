@@ -22,7 +22,7 @@ const Technologies = () => {
 
     useEffect(() => {
         AOS.init({
-          offset: 50, 
+          offset: 10, 
           easing: 'ease-in-out', 
         });
       }, []);

@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 const Footer = () => {
     useEffect(() => {
         AOS.init({
-            offset: 50, 
+            offset: 10, 
             easing: 'ease-in-out', 
           });
       }, []);
@@ -21,7 +21,7 @@ const Footer = () => {
             <button  onClick={handleClick} type="button" class="btn btn-info"><i class="fa-brands fa-linkedin"></i></button>
             </div>
          <p>Portfolio made by Rodrigo Miranda</p>
-         <p>Year: 2022</p>
+         <p>Year: 2022 - 2023</p>
          </footer>
         </div>
     );

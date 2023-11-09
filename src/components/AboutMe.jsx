@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import curriculumMio from "../assets/Rodrigo-Miranda-Curriculum-ES.pdf";
+import curriculumMio from "../assets/Rodrigo_Miranda_Curriculum_ES.pdf";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -24,21 +24,23 @@ const handleClickFour=()=>{
 }
 useEffect(() => {
   AOS.init({
-    offset: 50, 
-    easing: 'ease-in-out', 
+    offset: 10, 
+    easing: 'Ease-out', 
   });
 }, []);
     return (
+      <>
       
       <section >
       <div className='Abaut-me' id='id-AbautMe' data-aos="fade-left" style={{transition:"1s"}}>
          
            <h1>  <FormattedMessage id='id-about' defaultMessage='about' /></h1>
+     <div className='elements-container-abaut'>
           <div className='text-description'>
             <div  style={{padding:"1rem"}} >
               <h3><FormattedMessage id='id-about2' defaultMessage='about' /></h3>
             <br />
-            <p>
+            <p className='home5-0'>
             <FormattedMessage id='id-about3' defaultMessage='about' /> 
             </p>
               <br />
@@ -46,9 +48,10 @@ useEffect(() => {
             </div>
           
           </div>
-          <h3 data-aos="zoom-in" style={{transition:"0.1s"}}> <FormattedMessage id='id-about16' defaultMessage='about' /> </h3>
+          <div className='certificates-div certificates-div-back'>
+          <h3 > <FormattedMessage id='id-about16' defaultMessage='about' /> </h3>
           <br />
-          <div className='certificate-div' data-aos="zoom-in" style={{transition:"0.1s", zIndex:"1000"}}>
+          <div className='certificate-div' >
            <OverlayTrigger
               placement="left"
               overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
@@ -109,9 +112,9 @@ useEffect(() => {
                )}
              </OverlayTrigger>
           </div>
-          <h3 data-aos="zoom-in" style={{transition:"0.1s"}}> <FormattedMessage id='id-about17' defaultMessage='about' /> </h3>
+          <h3  style={{transition:"0.1s"}}> <FormattedMessage id='id-about17' defaultMessage='about' /> </h3>
           <br />
-          <div className='certificate-div' data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
+          <div className='certificate-div'  style={{transition:"1s", zIndex:"1000"}}>
             <OverlayTrigger
             placement="left"
             overlay={<Tooltip className='tooptip' style={{transition:".5s"}}>
@@ -133,20 +136,20 @@ useEffect(() => {
             </OverlayTrigger>
           </div>
           <br />
-          <div >
-          <button className='curri-button'  data-aos="zoom-in" style={{transition:"1s", zIndex:"1000"}}>
+          {/*<div >
+          <button className='curri-button' >
          <a href={curriculumMio} target="_blank" className='curri-button'><FormattedMessage id='id-about15' defaultMessage='about' /></a>
-        </button>
-          </div>
+                </button>
+          </div>*/}
           <br />
         <div>
-
         </div>
-       
+        </div>
+        </div>
         </div>
         
       </section>
-       
+      </>
     );
 };
 

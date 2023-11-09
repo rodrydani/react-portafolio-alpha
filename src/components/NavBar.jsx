@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import { IntlProvider, FormattedMessage, FormattedNumber } from 'react-intl'
 
 const NavBar = () => {
@@ -21,7 +22,7 @@ const NavBar = () => {
             <Nav.Link className='nav-link'  href='#id-AbautMe' >
             <FormattedMessage id='id-navbar3' defaultMessage='abaut' />
             </Nav.Link>
-            <Nav.Link className='nav-link'  href='#id-technologies'>
+            <Nav.Link className='nav-link'  href='#id-technologies' >
             <FormattedMessage id='id-navbar2' defaultMessage='tecnologies' />
             </Nav.Link>
             <Nav.Link className='nav-link'  href='#id-Proyects' >
