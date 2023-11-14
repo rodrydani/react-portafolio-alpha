@@ -24,9 +24,11 @@ const Proyects = () => {
       });
     }, []);
     return (
-     
+     <div className='projects-container-background'>
+  <h1 className='project-tittle'><FormattedMessage id='id-pro' defaultMessage='pro' /></h1>
+
      <div className='project-container' data-aos="fade-left" style={{transition:".5s"}}>
-      <h1 className='project-tittle'><FormattedMessage id='id-pro' defaultMessage='pro' /></h1>
+    
       <br />
        
        
@@ -234,7 +236,7 @@ const Proyects = () => {
                </OverlayTrigger>
             </section>
             </div>
-           
+            </div>  
     );
 };
 

@@ -47,7 +47,7 @@ const Technologies = () => {
         };
     return (
         <>
-      
+      <div className='tech-container-background' data-aos="fade-right" style={{transition:".4s"}}>
   <h1 className='tech-tittle'><FormattedMessage id='id-tech' defaultMessage='tech' /></h1>
  
 
@@ -143,7 +143,7 @@ const Technologies = () => {
  <button onClick={goToNextSlide} className='slider-next'><i class="fa-solid fa-angle-right"></i></button>
  </div>
  </div>
-
+ </div>
            </>
     );
  
