@@ -2,7 +2,7 @@
 :root{
 
  font-family: 'Prompt', sans-serif;
---body-color:rgb(178, 228, 231);
+--body-color:rgba(126, 126, 126, 0.329);
 --body-color2: rgb(101, 85, 128);
 
 --nav-color: rgb(29, 140, 181);
