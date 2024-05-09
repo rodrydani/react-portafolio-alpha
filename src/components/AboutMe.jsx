@@ -32,7 +32,7 @@ useEffect(() => {
       <>
       
       <section >
-      <div className='Abaut-me' id='id-AbautMe' data-aos="fade-left" style={{transition:"1s"}}>
+      <div className='Abaut-me' id='id-AbautMe'  style={{transition:"1s"}}>
          
            <h1>  <FormattedMessage id='id-about' defaultMessage='about' /></h1>
      <div className='elements-container-abaut'>

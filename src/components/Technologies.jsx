@@ -47,17 +47,17 @@ const Technologies = () => {
         };
     return (
         <>
-      <div className='tech-container-background' data-aos="fade-right" style={{transition:".4s"}}>
+      <div className='tech-container-background'  style={{transition:".4s"}}>
   <h1 className='tech-tittle'><FormattedMessage id='id-tech' defaultMessage='tech' /></h1>
  
 
      <Slider {...settings }ref={sliderRef}>    
      <div>
-     <div className='tech-container'  data-aos="fade-right" style={{transition:".5s"}}>
+     <div className='tech-container'   style={{transition:".5s"}}>
       <h1 className='tech-tittle tittle-front'>FRONTEND</h1>
            <section className='technologies' id='id-technologies'>
            
-              <div className='cont-logo'data-aos="zoom-in" style={{transition:".5s"}}>
+              <div className='cont-logo' style={{transition:".5s"}}>
                 <img className='img-logo'  src={HtmlLogo} alt="" />
                 <p className='text-tech'><FormattedMessage id='id-tech1' defaultMessage='tech' /></p>
             </div>
@@ -66,25 +66,25 @@ const Technologies = () => {
             <FormattedMessage id='id-tech2' defaultMessage='tech' />
              </p>
              </div>
-            <div className="cont-logo" data-aos="zoom-in" style={{transition:".5s"}}><img className='img-logo'  src={JavaScriptLogo} alt="" />
+            <div className="cont-logo"  style={{transition:".5s"}}><img className='img-logo'  src={JavaScriptLogo} alt="" />
             <p className='text-tech'>
             <FormattedMessage id='id-tech3' defaultMessage='tech' />
             </p>
             </div>
-            <div className='cont-logo' data-aos="zoom-in" style={{transition:".5s"}}><img className='img-logo'  src={ReactLogo} alt="" />
+            <div className='cont-logo'  style={{transition:".5s"}}><img className='img-logo'  src={ReactLogo} alt="" />
             <p className='text-tech'>
             <FormattedMessage id='id-tech4' defaultMessage='tech' />
             </p>
             </div>
             <div>
-                <div className='cont-logo' data-aos="zoom-in" style={{transition:".5"}}><img className='img-logo' src={BootstrapLogo} alt="" />
+                <div className='cont-logo' style={{transition:".5"}}><img className='img-logo' src={BootstrapLogo} alt="" />
                 <p className='text-tech'>
                 <FormattedMessage id='id-tech5' defaultMessage='tech' />
                 </p>
                 </div>
             </div>
             <div>
-                <div className='cont-logo' data-aos="zoom-in" style={{transition:".5s"}}><img className='img-logo' src={reduxLogo} alt="" />
+                <div className='cont-logo'  style={{transition:".5s"}}><img className='img-logo' src={reduxLogo} alt="" />
                 <p className='text-tech'>
                 <FormattedMessage id='id-tech6' defaultMessage='tech' />
                     </p>
@@ -94,11 +94,11 @@ const Technologies = () => {
            </div>
       </div>
       <div>
-      <div className='tech-container'  data-aos="fade-right" style={{transition:".5s"}}>
+      <div className='tech-container'   style={{transition:".5s"}}>
       <h1 className='tech-tittle tittle-front'>BACKEND</h1>
            <section className='technologies' id='id-technologies'>
           
-              <div className='cont-logo'data-aos="zoom-in" style={{transition:".5s"}}>
+              <div className='cont-logo' style={{transition:".5s"}}>
                 <img className='img-logo'  src={nodeLogo} alt="" />
                 <p className='text-tech'><FormattedMessage id='id-tech7' defaultMessage='tech' /></p>
             </div>
@@ -107,25 +107,25 @@ const Technologies = () => {
             <FormattedMessage id='id-tech8' defaultMessage='tech' />
              </p>
              </div>
-            <div className="cont-logo" data-aos="zoom-in" style={{transition:".5s"}}><img className='img-logo'  src={npmLogo} alt="" />
+            <div className="cont-logo"  style={{transition:".5s"}}><img className='img-logo'  src={npmLogo} alt="" />
             <p className='text-tech'>
             <FormattedMessage id='id-tech9' defaultMessage='tech' />
             </p>
             </div>
-            <div className='cont-logo' data-aos="zoom-in" style={{transition:".5s"}}><img className='img-logo'  src={sequelizeLogo} alt="" />
+            <div className='cont-logo'  style={{transition:".5s"}}><img className='img-logo'  src={sequelizeLogo} alt="" />
             <p className='text-tech'>
             <FormattedMessage id='id-tech10' defaultMessage='tech' />
             </p >
             </div>
             <div>
-                <div className='cont-logo' data-aos="zoom-in" style={{transition:".5"}}><img className='img-logo' src={dbeaverLogo} alt="" />
+                <div className='cont-logo'  style={{transition:".5"}}><img className='img-logo' src={dbeaverLogo} alt="" />
                 <p className='text-tech'>
                 <FormattedMessage id='id-tech11' defaultMessage='tech' />
                 </p>
                 </div>
             </div>
             <div>
-                <div className='cont-logo' data-aos="zoom-in" style={{transition:".5s"}}><img className='img-logo' src={swaggerLogo} alt="" />
+                <div className='cont-logo'  style={{transition:".5s"}}><img className='img-logo' src={swaggerLogo} alt="" />
                 <p className='text-tech'>
                 <FormattedMessage id='id-tech12' defaultMessage='tech' />
                     </p>
